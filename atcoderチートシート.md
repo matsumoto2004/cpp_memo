@@ -93,6 +93,8 @@ else if(a<=c){
 | a >= b | aはb以上 |
 | a == b | aとbは等しい |
 | a != b | aとbは等しくない |
+| <条件式1> && <条件式2> | 条件式1 かつ 条件式2 |
+| <条件式1> \|\| <条件式2> | 条件式1 または 条件式2 |
 
 
 ## ループ
@@ -119,6 +121,28 @@ reverse(vec.begin(),vec.end());
 cout << v[0] << " " <<  v[1] << " " << v[2] << endl;//4 3 2
 ```
 
+## コードの例
+複数個の整数の入力を受け取るとき
+```
+5
+3 1 4 1 5
+```
+```cpp
+#include <bits/stdc++.h>
+using namespace std; 
+using ll = long long;
+
+int main() {
+  int n;
+  cin >> n;
+  vector<int> v(n);
+
+  for(int i=0;i<n;i++){
+    cin >> v[i];
+  }
+}  
+```
+
 ## 実行
 a.cppというファイルを実行したいとき
 ```
@@ -135,4 +159,4 @@ g++ a.cpp
 - コードを書き換えたあと、g++ *.cppを忘れていないか
 
 
-##コードの例
+
